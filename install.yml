@@ -1,0 +1,23 @@
+---
+- name: Install Nginx on Web Servers
+  hosts: web_servers
+  become: yes  # If root privileges are needed
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+      when: ansible_os_family == "Debian"  # For Debian/Ubuntu-based servers
+
+    - name: Install Nginx
+      yum:
+        name: nginx
+        state: present
+      when: ansible_os_family == "Debian"  # For RedHat/CentOS-based servers
+
+    - name: Start and enable Nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
