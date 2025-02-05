@@ -7,6 +7,6 @@
 </head>
 <body>
     <h1>Welcome to the Nginx Web Server</h1>
-    <p>This page is served from server with IP address: {{ server_ip }}</p>
+    <p>This page is served from server with IP address: <?php echo $_SERVER['SERVER_ADDR']; ?></p>
 </body>
 </html>
