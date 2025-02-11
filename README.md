@@ -1,3 +1,3 @@
 # _AUTOSCALE_PROJECT
-hello
 This project focuses on setting up an auto-scaling infrastructure for Nginx on AWS EC2, using modern DevOps tools for automation, monitoring, and orchestration. The goal is to ensure high availability, scalability, and efficient deployment of web servers.
+Through the use of automation tools like Terraform, Jenkins/GitLab CI, and Ansible, the deployment process is streamlined and efficient. The integration of auto-scaling, load balancing, and real-time monitoring ensures optimal performance, cost efficiency, and reliability. By addressing key challenges in scalability and availability, this infrastructure solution provides a robust framework capable of handling varying traffic loads while maintaining system health and security.
